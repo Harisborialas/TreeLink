@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import data from "../data.json";
+import { dummyData } from "@/dummyDB";
+import Link from "next/link";
 export function LinkCard({ href, title, image }) {
   return (
     <a
@@ -22,7 +24,7 @@ export default function Home() {
       <Head>
         <title>Link Tree App</title>
       </Head>
-      <div className=" flex flex-col items-center pt-10 justify-center">
+      <div className="container flex flex-col items-center pt-10 justify-center">
         <div className="maindiv">
           <Image
             className="rounded-full"
@@ -40,6 +42,21 @@ export default function Home() {
           {data.socials.map((linkdata) => (
             <LinkCard image={""} key={linkdata.href} {...linkdata} />
           ))}
+        </div>
+        <div>
+            <h1 className="text-white mt-6 text-3xl font-bold">Blog Posts</h1>
+            {dummyData.map((data) => (
+              <Link className="" href={`/blog/${data.slug}`} passHref legacyBehavior>
+                <a
+                  key={data.slug}
+                  className="blogcard mt-6 block border rounded-md p-5 hover:bg-white hover:text-black hover:cursor-pointer">
+                  <h2 className="text-xl font-semi-bold">{data.title}</h2>
+                  <p className="mt-2 text-slate-500">
+                    {data.content.substring(0, 32)}...
+                  </p>
+                </a>
+              </Link>
+            ))}
         </div>
       </div>
     </>
