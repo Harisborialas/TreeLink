@@ -1,0 +1,45 @@
+{
+  "name": "@Entreprenure",
+  "avatar": "https://pbs.twimg.com/profile_images/1560478006266810370/XASkJKWD_400x400.jpg",
+  "bio": "I'm a software engineer, writer, and speaker. I'm currently working on @microsoft's @azure team. I'm also the founder of @devslopes.",
+  "location": "Seattle, WA",
+  "Links": [
+    {
+      "title": "My Personal Account",
+      "href": "https://harisqazi.io",
+      "image": "https://pbs.twimg.com/profile_images/1560478006266810370/XASkJKWD_400x400.jpg"
+    },
+    {
+      "title": "Vercel",
+      "href": "https://vercel.com"
+    }
+  ],
+  "socials": [
+    {
+      "title": "Twitter",
+      "href": "https://twitter.com/harisqazi",
+      "image": "/TWITTER.png"
+    },
+    {
+      "title": "Facebook",
+      "href": "https://www.facebook.com/harisqazi",
+      "image": "/FACEBOOK.png"
+    },
+    {
+      "title": "Instagram",
+      "href": "https://www.instagram.com/harisqazi/",
+      "image": "/INSTAGRAM.png"
+    },
+    {
+      "title": "LinkedIn",
+      "href": "https://www.linkedin.com/in/harisqazi/",
+      "image": "/LINKEDIN.png"
+    },
+    {
+      "title": "Website",
+      "href": "https://harisqazi.com",
+      "image": "/WEBSITE.svg"
+
+    }
+  ]
+}
