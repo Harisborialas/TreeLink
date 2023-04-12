@@ -1,6 +1,5 @@
-import { dummyData } from '@/dummyDB'
+import { dummyData } from 'dummyDB'
 import Head from 'next/head'
-import { Key } from 'react'
 
 // interface PostBlog {
 //   slug: Key | null | undefined
